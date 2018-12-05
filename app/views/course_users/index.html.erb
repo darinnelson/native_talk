@@ -1,0 +1,5 @@
+<% @courseusers.each do |courseuser| %>
+  <h1><%= courseuser.user.name %></h1>
+  <h3><%= courseuser.xp %></h3>
+  <h3><%= courseuser.total_attempted %></h3>
+<% end %>

@@ -1,0 +1,37 @@
+<h2>Translate the following.</h2>
+<% @course.expressions.each do |expression| %>
+  <h2><%= expression.spanish %></h2>
+    <div> 
+      Enter the translation: <input type="text" id="<%= expression.id %>">
+      <input id="expression-<%= expression.id %>" type="submit" value="Check" onclick='checkAnswer("<%= expression.english %>", <%= expression.id %>)'>
+    </div>
+<% end %>
+
+</br>
+</br>
+<a href="/expressions">All expressions</a>
+<a href="/courses">Return to all courses</a>
+
+<script>
+  // $(document).ready(function() {});
+
+  function checkAnswer(answer, id) {
+    var check = document.getElementById(id).value;
+    if (check === answer) {
+      axios.post("/increase_exp_global")
+        .then(function (response) {
+          // handle success
+          console.log(response);
+        })
+      axios.post("/increase_exp_local")
+        .then(function (response) {
+          // handle success
+          console.log(response);
+        })
+      alert("Correct");
+    } else {
+      alert("You are trash. The correct answer is: " + answer);
+    }
+    // alert(answer);
+  }
+</script>
