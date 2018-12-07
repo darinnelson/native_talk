@@ -8,11 +8,13 @@ Rails.application.routes.draw do
     get "/courses" => "courses#index"
     get "/courses/:name" => "courses#show"
 
-    get "/course_users" => "course_users#show"
+    get "/course_users" => "course_users#index"
     post "/course_users" => "course_users#create"
  
     get "/sessions/new" => "sessions#new"
     post "/sessions" => "sessions#create"
+
+    get "/leaderboards" => "leaderboards#all"
 
   end
   

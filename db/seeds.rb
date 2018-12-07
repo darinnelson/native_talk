@@ -27,3 +27,12 @@ Expression.create(spanish: "Buena", english: "Hot", course_id: 1, hidden: false)
 Expression.create(spanish: "Weon", english: "Dude", course_id: 2, hidden: false)
 Expression.create(spanish: "Pololo", english: "Boyfriend", course_id: 2, hidden: false)
 Expression.create(spanish: "sacarle la chucha", english: "To beat someone up", course_id: 2, hidden: false)
+
+Expression.create(spanish: "Chevere", english: "Cool", course_id: 3, hidden: false)
+Expression.create(spanish: "Parcero", english: "Bro", course_id: 3, hidden: false)
+Expression.create(spanish: "Quiubo", english: "what's up?", course_id: 3, hidden: false)
+
+
+Expression.create(spanish: "Boricua", english: "Puerto Rican", course_id: 4, hidden: false)
+Expression.create(spanish: "Broki", english: "Buddy", course_id: 4, hidden: false)
+Expression.create(spanish: "Tirar", english: "To Hit On", course_id: 4, hidden: false)
