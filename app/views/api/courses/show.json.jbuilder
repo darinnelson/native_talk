@@ -5,4 +5,6 @@ json.expressions @course.expressions.each do |expression|
   json.english expression.english
   json.spanish expression.spanish
   json.hidden expression.hidden
+  json.hidden_grid expression.hidden_grid
+  json.correct false
 end
