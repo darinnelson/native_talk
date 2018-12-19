@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     get "/leaderboards" => "leaderboards#all"
+    get "/googletranslate" => "googletranslate#translate"
 
   end
   
