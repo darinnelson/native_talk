@@ -10,6 +10,8 @@ Course.create(name: "Mexico", image_url: "http://flags.fmcdn.net/data/flags/w580
 Course.create(name: "Chile", image_url: "http://flags.fmcdn.net/data/flags/w580/cl.png")
 Course.create(name: "Colombia", image_url: "http://flags.fmcdn.net/data/flags/w580/co.png")
 Course.create(name: "Puerto Rico", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_Puerto_Rico.svg/255px-Flag_of_Puerto_Rico.svg.png")
+Course.create(name: "Brazil", image_url: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png")
+
 
 CourseUser.create(user_id: 1, course_id: 1, xp: 70, total_correct: 0, total_attempted: 0)
 CourseUser.create(user_id: 1, course_id: 2, xp: 80, total_correct: 0, total_attempted: 0)
